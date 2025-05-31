@@ -1,22 +1,39 @@
-Herramienta que te ayuda a hacer una busqueda de maquinas de HackTheBox ya resueltas con videos de youtube de s4vitar
+# htbmachines
 
+Herramienta que te ayuda a hacer una búsqueda de máquinas de HackTheBox ya resueltas con videos de YouTube de **s4vitar**.
 
-Pasos para instalar 
-1er Paso
-Lo descargamos en formato raw
+---
+
+## 🔧 Pasos para instalar
+
+**1er Paso**  
+Descargamos el script en formato raw:
+
+```bash
 wget https://raw.githubusercontent.com/s4cketh/htbmachines/refs/heads/main/htbmachines.sh
+
 2do Paso
+Ejecutamos el siguiente comando para actualizar los datos:
+
+bash
+Copiar
+Editar
 ./htbmachines -u
-Luego de estos 2 pasos estara listo para usar
-
-
-formas de usarlo 
+📌 Formas de uso
+bash
+Copiar
+Editar
 [+] Uso: /n
-	u) Descargar o actualizar archivos necesarios
-	m) Buscar por un nombre de maquina
-	i) Buscar por direccion IP
-	y) Buscar por nombre de la maquina
-	d) Buscar por la dificultad de una maquina
-	s) Buscar por sistema operativo
-	h) Mostrar este panel de ayuda
-NOTA: Respetar las mayusculas
+u → Descargar o actualizar archivos necesarios
+
+m → Buscar por un nombre de máquina
+
+i → Buscar por dirección IP
+
+y → Buscar por nombre de la máquina
+
+d → Buscar por la dificultad de una máquina
+
+s → Buscar por sistema operativo
+
+h → Mostrar este panel de ayuda
