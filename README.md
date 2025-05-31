@@ -32,3 +32,10 @@ Ejecutamos el siguiente comando para actualizar los datos:
 -s → Buscar por sistema operativo
 
 -h → Mostrar este panel de ayuda
+
+Combinaciones de comando
+./htbmachines -d [ ] -s [ ] 
+./htbmachines -s [ ] -d [ ]
+```
+NOTA: Respetar las mayusculas
+
