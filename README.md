@@ -19,16 +19,16 @@ Ejecutamos el siguiente comando para actualizar los datos:
 📌 Formas de uso
 
 [+] Uso: /n
-u → Descargar o actualizar archivos necesarios
+-u → Descargar o actualizar archivos necesarios
 
-m → Buscar por un nombre de máquina
+-m → Buscar por un nombre de máquina
 
-i → Buscar por dirección IP
+-i → Buscar por dirección IP maquina 
 
-y → Buscar por nombre de la máquina
+-y → Buscar el link del video por el nombre de la maquina
 
-d → Buscar por la dificultad de una máquina
+-d → Buscar por la dificultad de una máquina
 
-s → Buscar por sistema operativo
+-s → Buscar por sistema operativo
 
-h → Mostrar este panel de ayuda
+-h → Mostrar este panel de ayuda
