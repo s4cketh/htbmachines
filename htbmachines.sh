@@ -86,9 +86,9 @@ function searchIP(){
 
   machineName="$(cat bundle.js | grep "ip: \"$ipAddress\"" -B 3 | grep "name" | awk 'NF{print $NF}' | tr -d '"' | tr -d ',')"
   if [ "$machineName" ]; then
-  echo -e "\n[+] La IP $ipAddress, corresponde a la maquina $machineName\n"
+  echo -e "\n${yellowColour}[+]${endColour} ${grayColour}La IP $ipAddress, corresponde a la maquina $machineName ${endColour}\n"
    else
-  echo -e "\n[!] La IP proporcionada no existe\n" 
+  echo -e "\n${yellowColour}[!]${endColour} ${grayColour}La IP proporcionada no existe${endColour}\n" 
   fi
 }
 
@@ -97,9 +97,9 @@ function getYoutubeLink(){
   youtubeLink="$(cat bundle.js | awk "/name: \"$machineName\"/,/resuelta/" | grep youtube | awk 'NF{print $NF}' | tr -d '"' | tr -d ',')"
 
   if [ "$youtubeLink" ]; then
-  echo -e "[+] El tutorial para esta maquina esta en el siguiente enlace $youtubeLink"
+  echo -e "${yellowColour}[+]${endColour} ${grayColour}El tutorial para esta maquina esta en el siguiente enlace $youtubeLink ${endColour}\n"
   else
-  echo -e "[+] La maquina proporcionada no existe"
+  echo -e "${yellowColour}[+]${endColour} ${grayColour}La maquina proporcionada no existe${endColour}\n"
   fi
   }
 
@@ -109,10 +109,10 @@ function getMachinesDifficulty(){
  results_check="$(cat bundle.js | grep  "dificultad: \"$difficulty\"" -B 5 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ',' | column)"
 
  if [ "$results_check" ]; then
-  echo -e "\n[+] Representando las maquinas que posee la dificultad $difficulty\n"
+  echo -e "\n${yellowColour}[+]${endColour} Representando las maquinas que posee la dificultad $difficulty ${endColour} \n"
   cat bundle.js | grep "dificultad: \"$difficulty\"" -B 5 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ',' | column
  else
-  echo -e "\n[!] La dificultad indicada no existe\n" 
+  echo -e "\n${yellowColour}[!]${endColour} ${grayColour}La dificultad indicada no existe\n" 
  fi
 }
 
@@ -121,10 +121,10 @@ function getMachineSistem(){
 nameSistem="$(cat bundle.js | grep "so: \"$sistem\"" -B 5 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ',' | column)"
 
 if [ "$nameSistem" ]; then
-  echo "\n[+] Representando todo las maquinas del sistema operativo $sistem"
+  echo "\n${yellowColour}[+] Representando todo las maquinas del sistema operativo $sistem\n"
   cat bundle.js | grep "so: \"$sistem\"" -B 5 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ',' | column
 else
-  echo -e "\n[!]El sistema operativo ingresado no existe\n"
+  echo -e "\n${yellowColour}[!]${endColour} ${grayColour}El sistema operativo ingresado no existe${endColour} \n"
 fi
 }
 function getSODificult(){
@@ -133,11 +133,11 @@ function getSODificult(){
 
  check_results="$(cat bundle.js | grep "so: \"$sistem\"" -C 4 | grep "dificultad: \"$difficulty\"" -B 5 | grep "name" | awk 'NF {print $NF}' | tr -d '"' | tr -d ',' | column)"
  if [ "$check_results" ]; then
- echo -e "\n[+] Listando maquinas de dificultad $difficulty que tengan el sistema operativo $sistem\n"
+ echo -e "\n${yellowColour}[+]${endColour} ${grayColour}Listando maquinas de dificultad $difficulty que tengan el sistema operativo $sistem ${endColour} \n"
 
  cat bundle.js | grep "so: \"$sistem\"" -C 4 | grep "dificultad: \"$difficulty\"" -B 5 | grep "name" | awk 'NF {print $NF}' | tr -d '"' | tr -d ', ' | column
 else
-  echo "\n[!] Se ha indicado una dificultad o sistema operativo incorrectos"
+  echo "\n${yellowColour}[!]${endColour} ${grayColour}Se ha indicado una dificultad o sistema operativo incorrectos ${endColour} \n"
 fi
 }
 function getDificultSO(){
@@ -145,10 +145,10 @@ function getDificultSO(){
  difficulty="$2"
  checkOSDificult="$(cat bundle.js | grep "dificultad: \"$difficulty\""  -C 5 | grep "so: \"$sistem\"" -B 4 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ',')"
  if [ "$checkOSDificult" ]; then
-echo -e  "\n[+] Listando maquinas que tengan sistema operativo $sistem de dificultad $difficulty"
+echo -e  "\n${yellowColour}[+] Listando maquinas que tengan sistema operativo $sistem de dificultad $difficulty\n"
   cat bundle.js | grep "dificultad: \"$difficulty\""  -C 5 | grep "so: \"$sistem\"" -B 4 | grep name | awk 'NF{print $NF}' | tr -d '"' | tr -d ','
 else
-echo -e "\n[!] Se ha indicado un sistema operativo o dificultad incorrectos"
+echo -e "\n${yellowColour}[!]${endColour} ${grayColour}Se ha indicado un sistema operativo o dificultad incorrectos${endColour}\n"
  fi
 }
 # Indicadores
