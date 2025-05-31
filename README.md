@@ -11,7 +11,7 @@ Luego de estos 2 pasos estara listo para usar
 
 
 formas de usarlo 
-[+] Uso:
+[+] Uso: /n
 	u) Descargar o actualizar archivos necesarios
 	m) Buscar por un nombre de maquina
 	i) Buscar por direccion IP
