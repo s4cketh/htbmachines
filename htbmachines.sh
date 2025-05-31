@@ -28,13 +28,13 @@ main_url="https://htbmachines.github.io/bundle.js"
 function helpPanel(){
  echo -e "\n${yellowColour}[+] Uso:${endColour}"
  
- echo -e "\t${purpleColour}u)${endColour} Descargar o actualizar archivos necesarios"
- echo -e "\t${purpleColour}m)${endColour} Buscar por un nombre de maquina"
- echo -e "\t${purpleColour}i)${endColour} Buscar por direccion IP"
- echo -e "\t${purpleColour}y)${endColour} Buscar por nombre de la maquina"
- echo -e "\t${purpleColour}d)${endColour} Buscar por la dificultad de una maquina" 
- echo -e "\t${purpleColour}s)${endColour} Buscar por sistema operativo"
- echo -e "\t${purpleColour}h)${endColour} Mostrar este panel de ayuda"
+ echo -e "\t${purpleColour}-u)${endColour} Descargar o actualizar archivos necesarios"
+ echo -e "\t${purpleColour}-m)${endColour} Buscar por un nombre de maquina"
+ echo -e "\t${purpleColour}-i)${endColour} Buscar por direccion IP"
+ echo -e "\t${purpleColour}-y)${endColour} Buscar por el link del video por el nombre de la maquina"
+ echo -e "\t${purpleColour}-d)${endColour} Buscar por la dificultad de una maquina" 
+ echo -e "\t${purpleColour}-s)${endColour} Buscar por sistema operativo"
+ echo -e "\t${purpleColour}-h)${endColour} Mostrar este panel de ayuda"
 } 
 
 function searchMachine(){
