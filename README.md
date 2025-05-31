@@ -15,14 +15,9 @@ wget https://raw.githubusercontent.com/s4cketh/htbmachines/refs/heads/main/htbma
 2do Paso
 Ejecutamos el siguiente comando para actualizar los datos:
 
-bash
-Copiar
-Editar
 ./htbmachines -u
 📌 Formas de uso
-bash
-Copiar
-Editar
+
 [+] Uso: /n
 u → Descargar o actualizar archivos necesarios
 
