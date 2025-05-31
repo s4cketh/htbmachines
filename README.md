@@ -19,3 +19,4 @@ formas de usarlo
 	d) Buscar por la dificultad de una maquina
 	s) Buscar por sistema operativo
 	h) Mostrar este panel de ayuda
+NOTA: Respetar las mayusculas
