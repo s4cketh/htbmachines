@@ -1,6 +1,6 @@
 # htbmachines
 
-Herramienta que te ayuda a hacer una búsqueda de máquinas de HackTheBox ya resueltas con videos de YouTube de **s4vitar**.
+Herramienta que te ayuda a hacer una búsqueda desde la consola de máquinas de HackTheBox ya resueltas con videos de YouTube de **s4vitar**.
 
 ---
 
